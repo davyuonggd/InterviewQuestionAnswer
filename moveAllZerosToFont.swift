@@ -12,6 +12,7 @@ public func moveZerosToFront(list: inout [Int]) -> Int { //O(n)
       continue
     } else {
       if i == 0 {
+        numOfZeros += 1
         continue
       }
       (list[i], list[numOfZeros]) = (list[numOfZeros], list[i]) //swap
